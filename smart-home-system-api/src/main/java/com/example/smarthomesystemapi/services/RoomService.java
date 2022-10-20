@@ -5,6 +5,7 @@ import java.util.concurrent.ExecutionException;
 import org.springframework.stereotype.Service;
 
 import com.example.smarthomesystemapi.models.Room;
+import com.example.smarthomesystemapi.services.interfaces.IRoomService;
 import com.google.api.core.ApiFuture;
 import com.google.cloud.firestore.DocumentReference;
 import com.google.cloud.firestore.DocumentSnapshot;
@@ -13,7 +14,7 @@ import com.google.cloud.firestore.WriteResult;
 import com.google.firebase.cloud.FirestoreClient;
 
 @Service
-public class RoomService {
+public class RoomService implements IRoomService {
     public static final String COL_NAME = "rooms";
 
     public String saveRoom(Room room) throws InterruptedException, ExecutionException {

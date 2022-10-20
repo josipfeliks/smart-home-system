@@ -1,5 +1,7 @@
 package com.example.smarthomesystemapi.services;
 
-public class DoorService {
+import com.example.smarthomesystemapi.services.interfaces.IDoorService;
+
+public class DoorService implements IDoorService {
     
 }
