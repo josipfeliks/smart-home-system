@@ -5,16 +5,22 @@ import java.util.UUID;
 
 public interface ILightService {
     
-    boolean turnOn(UUID lightId, LocalTime when);
-    boolean turnOn(UUID lightId);
+    boolean turnLightOn(UUID lightId, LocalTime when);
+    boolean turnLightOn(UUID lightId);
 
-    boolean turnOff(UUID lightId, LocalTime when);
-    boolean turnOff(UUID lightId);
+    boolean turnLightOff(UUID lightId, LocalTime when);
+    boolean turnLightOff(UUID lightId);
 
-    boolean isOn(UUID lightId);
-    boolean isOff(UUID lightId);
+    boolean isLightOn(UUID lightId);
+    boolean isLightOff(UUID lightId);
 
     boolean dimLight(UUID lightId, double percentage, LocalTime when);
     boolean dimLight(UUID lightId, double percentage);
+
+    boolean turnAllLightsOn();
+    boolean turnAllLightsOn(LocalTime when);
+
+    boolean turnAllLightsOff();
+    boolean turnAllLightsOff(LocalTime when);
 
 }

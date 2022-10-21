@@ -31,5 +31,29 @@ public class CurtainsService implements ICurtainsService {
     public boolean closeCurtains(UUID curtainsId) {
         return closeCurtains(curtainsId, LocalTime.now());
     }
+
+    @Override
+    public boolean openAllCurtains() {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public boolean openAllCurtains(LocalTime when) {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public boolean closeAllCurtains() {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public boolean closeAllCurtains(LocalTime when) {
+        // TODO Auto-generated method stub
+        return false;
+    }
     
 }

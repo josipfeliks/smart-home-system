@@ -8,35 +8,35 @@ import com.example.smarthomesystemapi.services.interfaces.ILightService;
 public class LightService implements ILightService {
 
     @Override
-    public boolean turnOn(UUID lightId, LocalTime when) {
+    public boolean turnLightOn(UUID lightId, LocalTime when) {
         // TODO Auto-generated method stub
         return false;
     }
 
     @Override
-    public boolean turnOn(UUID lightId) {
-        return turnOn(lightId, LocalTime.now());
+    public boolean turnLightOn(UUID lightId) {
+        return turnLightOn(lightId, LocalTime.now());
     }
 
     @Override
-    public boolean turnOff(UUID lightId, LocalTime when) {
+    public boolean turnLightOff(UUID lightId, LocalTime when) {
         // TODO Auto-generated method stub
         return false;
     }
 
     @Override
-    public boolean turnOff(UUID lightId) {
-        return turnOff(lightId, LocalTime.now());
+    public boolean turnLightOff(UUID lightId) {
+        return turnLightOff(lightId, LocalTime.now());
     }
 
     @Override
-    public boolean isOn(UUID lightId) {
+    public boolean isLightOn(UUID lightId) {
         // TODO Auto-generated method stub
         return false;
     }
 
     @Override
-    public boolean isOff(UUID lightId) {
+    public boolean isLightOff(UUID lightId) {
         // TODO Auto-generated method stub
         return false;
     }
@@ -51,5 +51,31 @@ public class LightService implements ILightService {
     public boolean dimLight(UUID lightId, double percentage) {
         return dimLight(lightId, percentage, LocalTime.now());
     }
+
+    @Override
+    public boolean turnAllLightsOn() {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public boolean turnAllLightsOn(LocalTime when) {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public boolean turnAllLightsOff() {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public boolean turnAllLightsOff(LocalTime when) {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+
 
 }
