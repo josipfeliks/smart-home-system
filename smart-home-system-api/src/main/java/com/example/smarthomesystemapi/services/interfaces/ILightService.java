@@ -1,7 +1,11 @@
 package com.example.smarthomesystemapi.services.interfaces;
 
 import java.time.LocalTime;
+import java.util.List;
 import java.util.UUID;
+
+import com.example.smarthomesystemapi.models.Light;
+import com.example.smarthomesystemapi.requests.LightRequest;
 
 public interface ILightService {
     
@@ -22,5 +26,10 @@ public interface ILightService {
 
     boolean turnAllLightsOff();
     boolean turnAllLightsOff(LocalTime when);
+    UUID createLight(LightRequest lightRequest);
+    Light getLightById(UUID id);
+    List<Light> getAllLights();
+    boolean updateLight(LightRequest lightRequest);
+    boolean deleteLight(UUID id);
 
 }
