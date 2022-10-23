@@ -1,9 +1,12 @@
 package com.example.smarthomesystemapi.services;
 
+import java.util.List;
+import java.util.UUID;
 import java.util.concurrent.ExecutionException;
 
 import org.springframework.stereotype.Service;
 
+import com.example.smarthomesystemapi.models.Light;
 import com.example.smarthomesystemapi.models.Room;
 import com.example.smarthomesystemapi.services.interfaces.IRoomService;
 import com.google.api.core.ApiFuture;
@@ -39,5 +42,9 @@ public class RoomService implements IRoomService {
         }else {
             return null;
         }
+    }
+
+    public List<Light> getLightsInRoom(UUID roomId) {
+        return null;
     }
 }
